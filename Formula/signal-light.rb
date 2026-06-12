@@ -1,26 +1,26 @@
 class SignalLight < Formula
   desc "Local signal-light runtime for AI agent status display"
   homepage "https://github.com/starlight36/vibecoding-signal-light"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.1/signal-light-v0.1.1-macos-aarch64.tar.gz"
-      sha256 "4365a2738919415908d65a1e48b534a695fe5e06cd6886f121f5b8d89cfee3c9"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.2/signal-light-v0.1.2-macos-aarch64.tar.gz"
+      sha256 "e56489e76bdc1e1704fe27ed8d501cfbf8d1caa40ed17b84e24e4e3adb3a57e2"
     else
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.1/signal-light-v0.1.1-macos-x86_64.tar.gz"
-      sha256 "5e7d878a409cad87743d886d3caf333d8c51595df216c827c9104bd5e70e5890"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.2/signal-light-v0.1.2-macos-x86_64.tar.gz"
+      sha256 "aba0496a5ac67e88fba3f5f2053bbc012aeaa907ed326db483a8928150dae6ed"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.1/signal-light-v0.1.1-linux-arm64.tar.gz"
-      sha256 "60653a4cc84e6d553f109dedaeaba3ea869ae47cf2f531c612b8c7186220545a"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.2/signal-light-v0.1.2-linux-arm64.tar.gz"
+      sha256 "9472cc56de3fc8d1121eaeeea8ee7b4afca8d98bf1eae7e010597134d31e2722"
     else
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.1/signal-light-v0.1.1-linux-amd64.tar.gz"
-      sha256 "0c12873d9094271802b2e29f9e2f17404e5352b8ae4c44db92ddc94c902ac3b9"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.2/signal-light-v0.1.2-linux-amd64.tar.gz"
+      sha256 "55b08ba1eada8c7b51f96d5cab6c9e7682dfa5d78e7dbcdfb997b8833d5e6795"
     end
   end
 
