@@ -25,7 +25,14 @@ class SignalLight < Formula
   end
 
   def install
-    package_dir = Dir["signal-light-v#{version}-*"].first
+    package_dir = if (buildpath/"bin/signal-light-native").exist?
+      buildpath
+    else
+      package_name = Dir["signal-light-v#{version}-*"].first
+      odie "Cannot find unpacked signal-light release package" if package_name.nil?
+      buildpath/package_name
+    end
+
     cd package_dir do
       libexec.install "bin", "scripts"
       libexec.install "README.md"
