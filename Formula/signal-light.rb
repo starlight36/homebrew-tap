@@ -1,26 +1,26 @@
 class SignalLight < Formula
   desc "Local signal-light runtime for AI agent status display"
   homepage "https://github.com/starlight36/vibecoding-signal-light"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.3/signal-light-v0.1.3-macos-aarch64.tar.gz"
-      sha256 "8641482a966d50b13ea56b52d1ed64d23ca286802b551436776006d5e911edc5"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.4/signal-light-v0.1.4-macos-aarch64.tar.gz"
+      sha256 "3163cac26e4edd76419658f34f59a016569da9fd7ea08b8eeb2fb1aad29740b3"
     else
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.3/signal-light-v0.1.3-macos-x86_64.tar.gz"
-      sha256 "87b15a1bbd507f369a9c35c56a8a221255272e5c28a6dfda740ed9415bdd95d1"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.4/signal-light-v0.1.4-macos-x86_64.tar.gz"
+      sha256 "f04d38fc0457c2e241ecd70c1b23f7dc43b837c0c6e242040c3329512d0fa57a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.3/signal-light-v0.1.3-linux-arm64.tar.gz"
-      sha256 "e09c37b6310fa171093c274bbee848a394faf67b830f72b376ac0e74e1627daa"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.4/signal-light-v0.1.4-linux-arm64.tar.gz"
+      sha256 "7b216953afd6a257c44fe74958cd6c81b59bea1d9010a42b4a8d4f305bb2e9f4"
     else
-      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.3/signal-light-v0.1.3-linux-amd64.tar.gz"
-      sha256 "f952ec66eda367cc3e4ddec254161baf33ad561009cbc28bced686b887b20680"
+      url "https://github.com/starlight36/vibecoding-signal-light/releases/download/v0.1.4/signal-light-v0.1.4-linux-amd64.tar.gz"
+      sha256 "6c7fa27c3670332564127a7a20ba08900568d373865d2a79501abca117db8e81"
     end
   end
 
